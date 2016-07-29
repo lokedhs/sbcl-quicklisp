@@ -12,4 +12,4 @@ RUN wget http://prdownloads.sourceforge.net/sbcl/sbcl-1.3.7-x86-64-linux-binary.
 RUN cd /tmp && \
     wget https://beta.quicklisp.org/quicklisp.lisp && \
     sbcl --load quicklisp.lisp --quit --eval '(quicklisp-quickstart:install)'
-ADD sbclrc /root/.sbclrc
+COPY sbclrc /root/.sbclrc
