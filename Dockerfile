@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:zesty
 
 RUN apt-get update && apt-get install -y make bzip2 wget
 RUN wget http://prdownloads.sourceforge.net/sbcl/sbcl-1.4.2-x86-64-linux-binary.tar.bz2 -O /tmp/sbcl.tar.bz2 && \
