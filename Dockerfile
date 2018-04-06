@@ -1,7 +1,7 @@
 FROM ubuntu:artful
 
 RUN apt-get update && apt-get install -y make bzip2 wget
-RUN wget 'http://prdownloads.sourceforge.net/sbcl/sbcl-1.4.5-x86-64-linux-binary.tar.bz2' -O /tmp/sbcl.tar.bz2 && \
+RUN wget 'http://prdownloads.sourceforge.net/sbcl/sbcl-1.4.6-x86-64-linux-binary.tar.bz2' -O /tmp/sbcl.tar.bz2 && \
     mkdir /tmp/sbcl && \
     tar jxvf /tmp/sbcl.tar.bz2 --strip-components=1 -C /tmp/sbcl && \
     cd /tmp/sbcl && \
